@@ -1,0 +1,30 @@
+title: CMMC Daily Briefing
+description: Automated cybersecurity compliance intelligence for the Defense Industrial Base
+url: "https://jcribbet.github.io"
+baseurl: "/cmmc-daily-briefing"
+theme: minima
+
+author:
+  name: Jason Cribbet
+
+header_pages: []
+
+minima:
+  skin: dark
+
+defaults:
+  - scope:
+      path: "_briefings"
+      type: "briefings"
+    values:
+      layout: "briefing"
+
+collections:
+  briefings:
+    output: true
+    permalink: /briefings/:name/
+    sort_by: date
+    order: DESC
+
+plugins:
+  - jekyll-seo-tag
